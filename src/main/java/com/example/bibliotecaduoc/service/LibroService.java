@@ -33,10 +33,12 @@ public class LibroService {
         return "Producto Eliminado con exito!";
     }
 
+    /* La accion la hace "service" */
     public int totalLibrosV1(){
         return libroRepository.obtenerLibros().size();
     }
 
+    /* La accion la hace el "model" */
     public int totalLibrosV2(){
         return libroRepository.totalLibros();
     }
